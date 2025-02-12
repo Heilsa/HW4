@@ -66,5 +66,6 @@ if ( one > 250 || 250 < two) {
 } else {
     System.out.println("То нам подходит вариант под номером три " + three);
 }
+
     }
 }
