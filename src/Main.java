@@ -65,6 +65,7 @@ if ( one > 250 || 250 < two) {
     System.out.println("Если первая переменная " + one + " И вторая " + two + " не подошли");
 } else {
     System.out.println("То нам подходит вариант под номером три " + three);
+
 }
 
 
