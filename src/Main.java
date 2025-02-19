@@ -24,25 +24,25 @@ public class Main {
             System.out.println("Если скорость " + speedmax + " , то придётся заплатить штраф");
         }
         if (speedmin < 60) {
-            System.out.println("Если скорость " + speedmin + " , то можно ездить спокойно");
+            System.out.println("Если скорость " + speedmin + " , то можно ездить спокойно"); }
+
             System.out.println("Задача 4");
-            int young = 4;
-            int school = 9;
+            int young = 3;
+            int school = 14;
             int highSchool = 23;
             int job = 28;
-            if (young > 2 || young < 6) {
+            if (young > 2 && young < 6) {
                 System.out.println("Если возраст человека равен " + young + ", то ему нужно ходить в детский садик");
             }
-            if (school > 7 || school < 17) {
+            if (school > 8 && school < 17) {
                 System.out.println("Если возраст человека равен " + school + " ,то ему нужно ходить в детский садик");
             }
-            if (highSchool >= 18 || highSchool <= 24) {
+            if (highSchool >= 18 && highSchool <= 24) {
                 System.out.println("Если возраст человека равен " + highSchool + " ,то его место в университете");
             }
             if (job > 24) {
                 System.out.println("Если возраст человека равен " + job + " ,то ему пора ходить на работу");
             }
-        }
         System.out.println("Задача 5");
         int baby = 3;
         int schoolboy = 12;
@@ -57,17 +57,22 @@ public class Main {
             }
         }
         System.out.println("Задача 6");
-        int trainСarriage = 102;
-        if (trainСarriage > 1 || trainСarriage <= 60) {
+        int trainCarriage = 102;
+        int seatedPlaces = 60;
+        int standingPlaces = trainCarriage - seatedPlaces;
+        int occupiedSeats = 0;
+        if (occupiedSeats < seatedPlaces) {
             System.out.println("Люди будут ехать сидя");
-        } else {
+        } else if (occupiedSeats < trainCarriage) {
             System.out.println("Людям придётся ехать стоя");
+        } else {
+            System.out.println("Вагон уже полностью забит");
         }
         System.out.println("Задача 7");
         int one = 5;
         int two = 101;
         int three = 535;
-        if (one > 250 || 250 < two) {
+        if (one > two && three > two) {
             System.out.println("Если первая переменная " + one + " И вторая " + two + " не подошли");
         } else {
             System.out.println("То нам подходит вариант под номером три " + three);
