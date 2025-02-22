@@ -28,34 +28,28 @@ public class Main {
         }
 
         System.out.println("Задача 4");
-        int young = 3;
-        int school = 14;
-        int highSchool = 23;
-        int job = 28;
-        if (young > 2 && young < 6) {
-            System.out.println("Если возраст человека равен " + young + ", то ему нужно ходить в детский садик");
-        }
-        if (school > 7 && school < 17) {
-            System.out.println("Если возраст человека равен " + school + " ,то ему нужно ходить в детский садик");
-        }
-        if (highSchool >= 18 && highSchool <= 24) {
-            System.out.println("Если возраст человека равен " + highSchool + " ,то его место в университете");
-        }
-        if (job > 24) {
-            System.out.println("Если возраст человека равен " + job + " ,то ему пора ходить на работу");
+        int ages = 9;
+        if (ages >= 2 && ages <= 6) {
+            System.out.println("Если возраст человека равен " + ages + ", то ему нужно ходить в детский сад.");
+        } else if (ages >= 7 && ages <= 17) {
+            System.out.println("Если возраст человека равен " + ages + ", то ему нужно ходить в школу.");
+        } else if (ages >= 18 && ages <= 24) {
+            System.out.println("Если возраст человека равен " + ages + ", то ему нужно ходить в университет.");
+        } else if (ages > 24) {
+            System.out.println("Если возраст человека равен " + ages + ", то ему пора ходить на работу.");
+        } else {
+            System.out.println("Возраст не соответствует ни одной категории.");
         }
         System.out.println("Задача 5");
-        int baby = 3;
-        int schoolboy = 12;
-        int student = 18;
-        if (baby < 5) {
-            System.out.println("Если возраст ребенка равен " + baby + " ,то ему нельзя кататься на аттракционе");
-            if (schoolboy > 5 && schoolboy < 14) {
-                System.out.println("Если возраст ребенка равен " + schoolboy + " ,то ему можно кататься на аттракционе в сопровождении взрослых");
-            }
-            if (student >= 14) {
-                System.out.println("Если возраст ребенка равен " + student + " ,то ему можно кататься на аттракционе без взрослых");
-            }
+        int people = 14;
+        if (people < 5) {
+            System.out.println("Если возраст ребенка равен " + people + ", то ему нельзя кататься на аттракционе.");
+        } else if (people >= 5 && people < 14) {
+            System.out.println("Если возраст ребенка равен " + people + ", то ему можно кататься на аттракционе только в сопровождении взрослого.");
+        } else if (people >= 14) {
+            System.out.println("Если возраст ребенка равен " + people + ", то ему можно кататься на аттракционе без сопровождения взрослого.");
+        } else {
+            System.out.println("Возраст не соответствует ни одной категории.");
         }
         System.out.println("Задача 6");
         int trainCarriage = 102;
